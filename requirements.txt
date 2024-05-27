@@ -3,3 +3,5 @@ streamlit-drawable-canvas
 tensorflow
 pillow
 numpy
+pyyaml
+h5py
