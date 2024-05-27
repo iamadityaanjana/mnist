@@ -32,7 +32,7 @@ if canvas_result.image_data is not None:
     img = Image.fromarray(canvas_result.image_data.astype("uint8"), "RGBA")
 
     # Resize the image to 28x28 pixels
-    img_28x28 = img.resize((28, 28), Image.LANCZOS)
+    img_28x28 = img.resize((28, 28), Image.BOX)
 
     # Convert the image to grayscale
     img_gray = img_28x28.convert('L')
